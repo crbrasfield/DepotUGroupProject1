@@ -5,6 +5,12 @@
     src: url("../fonts/WorkSans-SemiBold.ttf");
 }
 
+
+
+.body-wrap {
+    padding-top: 5em;
+}
+
 .top-nav {
     height: 4em;
     width: 100%;
@@ -12,6 +18,7 @@
     margin-top: -1em;
     line-height: 4em;
     font-family: "WorkSansBold";
+    z-index: 1000;
     
     .top-nav-logo-continer{
         height: 4em;
@@ -20,13 +27,14 @@
         float: right;
         
     }
+    
     #fbLogo {
         float:right;
         height: 20px;
         width: auto;
         padding-right: 2em;
         padding-left: 1em;
-        padding-top: 1.5em;
+        padding-top: 1.9em;
     }
     
     #twitLogo {
@@ -35,14 +43,14 @@
         height: auto;
         padding-right: 1em;
         padding-left: 1em;
-        padding-top: 1.5em;
+        padding-top: 1.9em;
     }
     
     #sharkLogo {
         float:left;
         height: 30px;
         width: auto;
-        padding-top: 1em;
+        padding-top: 1.9em;
         padding-left: 2em;
     }
     
@@ -60,12 +68,19 @@
 }
 
 //////////////////////////////////////////
-// When screen size is more thatn 438px //    
+// When screen size is more than 767px //    
 //////////////////////////////////////////
 
 @media only screen and (min-width: 768px)   {
     #sharkLogoNotext {
         display: none;
+    }
+    .hamburger {
+        display: none;
+    }
+    
+    .top-nav {
+        position: fixed;
     }
     
 }
@@ -73,12 +88,68 @@
 
 
 //////////////////////////////////////////
-// When screen size is less thatn 438px //    
+// When screen size is less than 767px //    
 //////////////////////////////////////////
 
 @media only screen and (max-width: 767px) {
      #sharkLogo {
         display: none;
+    }
+    
+    #sharkLogoNotext {
+        float:left;
+        height: 50px;
+        width: auto;
+        padding-top: 1.9em;
+        padding-left: 2em;
+    }
+    
+    .top-nav {
+        position: fixed;
+    }
+    
+    .top-nav ul {
+        display: none;
+    }
+    
+    .top-nav-logo-continer{
+        display: none;
+    }
+    
+    .smallNavWrap {
+        background-color: #192246;
+        height: 6em;
+        width: 100%;
+    }
+    
+    .hamburger {
+        background-color: transparent;
+        cursor: pointer;
+        float: right;
+        padding-right: 20px;
+        opacity: 1;
+
+    }
+    
+    .line {
+        border-bottom: 4px solid white;
+        width: 35px;
+        padding-bottom: 5px;
+        margin-bottom: 6px;
+        border-radius: 5px;
+        float: left;
+        clear: both;
+        opacity: 1;
+    }
+    
+    .line:first-child {
+        padding-top: 2.2em;
+        opacity: 1;
+    }
+    
+    .line:last-child {
+        margin-bottom: 0;
+        opacity: 1;
     }
 }
 
