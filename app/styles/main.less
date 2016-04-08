@@ -42,11 +42,35 @@
     li {
         display: inline;
         color: #b4b6b8;
-        padding-right: 5em;
+        padding-right: 3em;
     }
 }
 
 
+
+
+//////////////////////////////////////////
+// When screen size is more thatn 438px //    
+//////////////////////////////////////////
+
+@media only screen and (min-width: 768px)   {
+    #sharkLogoNotext {
+        display: none;
+    }
+    
+}
+
+
+
+//////////////////////////////////////////
+// When screen size is less thatn 438px //    
+//////////////////////////////////////////
+
+@media only screen and (max-width: 767px) {
+     #sharkLogo {
+        display: none;
+    }
+}
 
 
 @import '../src/viewcontrols/about/about.vc.less';
