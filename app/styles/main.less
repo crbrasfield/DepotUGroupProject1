@@ -1,20 +1,51 @@
 @import '../../node_modules/platypusui/dist/platypus';
 
-@import '../src/viewcontrols/home/home.vc.less';
-
-
 .top-nav {
-    height: 60px;
+    height: 4em;
     width: 100%;
     background-color: #feffff;
     border-bottom: 2px solid black;
+    padding-top: 1em;
+    
+    img {
+        padding-top: 1em;
+    }
+    
+    #fbLogo {
+        float:right;
+        height: 20px;
+        width: auto;
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+    
+    #twitLogo {
+        float:right;
+        width: 20px;
+        height: auto;
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+    
+    #sharkLogo {
+        float:left;
+        height: 20px;
+        width: auto;
+    }
     
     ul {
         list-style: none;
-        float:right;
+        text-align: right;
     }
     
     li {
         display: inline;
+        color: #b4b6b8;
+        padding-right: 5em;
     }
 }
+
+@import '../src/viewcontrols/about/about.vc.less';
+@import '../src/viewcontrols/home/home.vc.less';
+@import '../src/viewcontrols/howtoplay/howtoplay.vc.less';
+@import '../src/viewcontrols/promotions/promotions.vc.less';
