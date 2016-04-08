@@ -1,23 +1,32 @@
 @import '../../node_modules/platypusui/dist/platypus';
 
+@font-face {
+    font-family: "WorkSansBold";
+    src: url("../fonts/WorkSans-SemiBold.ttf");
+}
 
 .top-nav {
     height: 4em;
     width: 100%;
     background-color: #feffff;
-    border-bottom: 2px solid black;
-    padding-top: 1em;
+    margin-top: -1em;
+    line-height: 4em;
+    font-family: "WorkSansBold";
     
-    img {
-        padding-top: 1em;
+    .top-nav-logo-continer{
+        height: 4em;
+        width: 8em;
+        background-color: #f2f3f5;
+        float: right;
+        
     }
-    
     #fbLogo {
         float:right;
         height: 20px;
         width: auto;
-        padding-right: 1em;
+        padding-right: 2em;
         padding-left: 1em;
+        padding-top: 1.5em;
     }
     
     #twitLogo {
@@ -26,15 +35,19 @@
         height: auto;
         padding-right: 1em;
         padding-left: 1em;
+        padding-top: 1.5em;
     }
     
     #sharkLogo {
         float:left;
-        height: 20px;
+        height: 30px;
         width: auto;
+        padding-top: 1em;
+        padding-left: 2em;
     }
     
     ul {
+        padding: 0px;
         list-style: none;
         text-align: right;
     }
@@ -46,8 +59,28 @@
     }
 }
 
+//////////////////////////////////////////
+// When screen size is more thatn 438px //    
+//////////////////////////////////////////
+
+@media only screen and (min-width: 439px)   {
+    
+    
+}
+
+
+
+//////////////////////////////////////////
+// When screen size is less thatn 438px //    
+//////////////////////////////////////////
+
+@media only screen and (max-width: 438px) {
+    
+}
+
 @import '../src/viewcontrols/about/about.vc.less';
 @import '../src/viewcontrols/home/home.vc.less';
 @import '../src/viewcontrols/howtoplay/howtoplay.vc.less';
+@import '../src/viewcontrols/howtoplayvideostab/howtoplayvideostab.vc.less';
 @import '../src/viewcontrols/promotions/promotions.vc.less';
-
+@import 'secondmain.less';
