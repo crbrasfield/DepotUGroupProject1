@@ -1,84 +1,12 @@
 @import '../../node_modules/platypusui/dist/platypus';
-
-
-.top-nav {
-    height: 4em;
-    width: 100%;
-    background-color: #feffff;
-    border-bottom: 2px solid black;
-    padding-top: 1em;
-    
-    img {
-        padding-top: 1em;
-    }
-    
-    #fbLogo {
-        float:right;
-        height: 20px;
-        width: auto;
-        padding-right: 1em;
-        padding-left: 1em;
-    }
-    
-    #twitLogo {
-        float:right;
-        width: 20px;
-        height: auto;
-        padding-right: 1em;
-        padding-left: 1em;
-    }
-    
-    #sharkLogo {
-        float:left;
-        height: 20px;
-        width: auto;
-    }
-    
-    ul {
-        list-style: none;
-        text-align: right;
-    }
-    
-    li {
-        display: inline;
-        color: #b4b6b8;
-        padding-right: 3em;
-    }
-}
-
-
-
-
-//////////////////////////////////////////
-// When screen size is more thatn 438px //    
-//////////////////////////////////////////
-
-@media only screen and (min-width: 768px)   {
-    #sharkLogoNotext {
-        display: none;
-    }
-    
-}
-
-
-
-//////////////////////////////////////////
-// When screen size is less thatn 438px //    
-//////////////////////////////////////////
-
-@media only screen and (max-width: 767px) {
-     #sharkLogo {
-        display: none;
-    }
-}
+@import '../src/templatecontrols/navbar/navbar.tc.less';
+@import '../src/templatecontrols/footer/footer.tc.less';
+@import '../src/viewcontrols/about/about.vc.less';
+@import '../src/viewcontrols/home/home.vc.less';
+@import '../src/viewcontrols/howtoplay/howtoplay.vc.less';
+@import '../src/viewcontrols/howtoplayvideostab/howtoplayvideostab.vc.less';
+@import '../src/viewcontrols/promotions/promotions.vc.less';
 
 * {
     box-sizing: border-box;
 }
-
-
-@import '../src/viewcontrols/about/about.vc.less';
-@import '../src/viewcontrols/home/home.vc.less';
-@import '../src/viewcontrols/howtoplay/howtoplay.vc.less';
-@import '../src/viewcontrols/promotions/promotions.vc.less';
-@import 'secondmain.less';

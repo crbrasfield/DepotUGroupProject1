@@ -1,0 +1,159 @@
+& {
+    #platui > #media;
+    #platui > #mixins;
+    #platui > #variables;
+
+    [plat-control="navbar"] {
+
+    }
+}
+
+
+
+@font-face {
+   font-family: "WorkSansBold";
+   src: url("../fonts/WorkSans-SemiBold.ttf");
+}
+
+.body-wrap {
+    padding-top: 5em;
+}
+
+.top-nav-logo-continer {
+    background-color: #f3f4f5;
+    width: 7em;
+    height: 72px;
+    float: right;
+}
+
+.top-nav {
+    height: 4.5em;
+    width: 100%;
+    background-color: #feffff;
+
+    margin-top: -1em;
+    line-height: 3.5em;
+    font-family: "WorkSansBold";
+    z-index: 1000;
+
+    img {
+        padding-top: 1em;
+    }
+    
+    #fbLogo {
+        float:right;
+        height: 53px;
+        width: auto;
+        padding-right: 1em;
+        padding-left: 1em;
+
+        padding-top: 2em;
+
+    }
+    
+    #twitLogo {
+        float:right;
+        width: 53px;
+        height: auto;
+        padding-right: 1em;
+        padding-left: 1em;
+
+        padding-top: 2.2em;
+
+    }
+    
+    #sharkLogo {
+        float:left;
+        height: 60px;
+        width: auto;
+        padding-top: 1.9em;
+        padding-left: 2em;
+
+    }
+    
+    ul {
+        list-style: none;
+        text-align: right;
+    }
+    
+    li {
+        display: inline;
+        color: #b4b6b8;
+        padding-right: 3em;
+    }
+}
+
+//////////////////////////////////////////
+// When screen size is more than 767px //    
+//////////////////////////////////////////
+
+@media only screen and (min-width: 768px)   {
+    #sharkLogoNotext {
+        display: none;
+    }
+    .hamburger {
+        display: none;
+    }
+    
+    .top-nav {
+        position: fixed;
+    }
+    
+}
+
+//////////////////////////////////////////
+// When screen size is less than 767px //    
+//////////////////////////////////////////
+
+@media only screen and (max-width: 767px) {
+    
+     #sharkLogo {
+        display: none;
+    }
+    
+    #sharkLogoNotext {
+        float:left;
+        height: 70px;
+        width: auto;
+        padding-top: 2.2em;
+        padding-left: 2em;
+    }
+    
+    .top-nav {
+        position: fixed;
+    }
+    
+    .top-nav ul {
+        display: none;
+    }
+    
+    .top-nav-logo-continer{
+        display: none;
+    }
+    
+    .smallNavWrap {
+        background-color: #192246;
+        height: 6em;
+        width: 100%;
+    }
+    
+    .hamburger {
+        background-color: transparent;
+        cursor: pointer;
+        float: right;
+        opacity: 1;
+        width: 100px;
+        padding-top: 40px;
+    }
+    
+    .ham-line {
+        border-bottom: 4px solid white;
+        width: 35px;
+        padding-bottom: 2px;
+        margin-bottom: 6px;
+        border-radius: 5px;
+        clear: both;
+        margin-left: 0px;
+    }
+    
+}
