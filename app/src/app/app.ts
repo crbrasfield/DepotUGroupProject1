@@ -1,5 +1,7 @@
 import {App, events, register, routing, web} from 'platypus';
 import HomeViewControl from '../viewcontrols/home/home.vc';
+import HowToPlayViewControl from '../viewcontrols/howtoplay/howtoplay.vc';
+import HowToPlayVideoStabViewControl from '../viewcontrols/howtoplayvideostab/howtoplayvideostab.vc';
 
 export default class MyApp extends App {
     constructor(router: routing.Router, config: web.IBrowserConfig) {
@@ -8,7 +10,9 @@ export default class MyApp extends App {
 		config.routingType = config.STATE;
 
         router.configure([
-            { pattern: '', view: HomeViewControl }
+            { pattern: '', view: HomeViewControl },
+            { pattern: '/howtoplay', view: HowToPlayViewControl },
+            { pattern: '/howtoplayvideostab', view: HowToPlayVideoStabViewControl }
         ]);
     }
 
