@@ -8,17 +8,21 @@ export default class NavbarTemplateControl extends ui.TemplateControl {
         modal: false,
     };
     
+    
     toggleModal() {
         if (this.context.modal === false) {
+            body.className = "no-scroll";
            this.context.modal = true; 
         } else {
             this.context.modal = false;
+            body.className = '';
         }
         
     }
     
 }
 
+let body: any = document.getElementById("body")
 
 
 register.control('navbar', NavbarTemplateControl);

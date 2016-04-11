@@ -8,6 +8,10 @@
     }
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 @font-face {
    font-family: "WorkSansBold";
    src: url("fonts/WorkSans-SemiBold.ttf");
@@ -15,11 +19,21 @@
 
 
 .modal-wrap {
-    background:rgba(255,255,255,0.7);
+    background:rgba(255,255,255,0.1);
     text-align: center;
     height: 100vh;
     color:#192246;
-    padding-top: 5em;
+    padding-top: 0.5em;
+    
+    #x {
+        color: #192246;
+        text-align: right;
+        padding-right: 0.5em;
+        font-size: 4em;
+        padding-top: 0px !important;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
     
     a:link {
         color: #192246;
