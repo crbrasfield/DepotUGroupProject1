@@ -26,7 +26,7 @@
 .wrapper-view1 {
     background-color: #fff;
     padding: 0px 40px 20px 40px;
-    text-align: center;
+    // text-align: center;
 }
 
 .wrapper-view2 {
@@ -39,7 +39,21 @@
     text-align: right;
 }
 
+.PhnBlckPhn {
+    display: none;
+    text-align: center;
+}
+
+.PhnBlckTab {
+    text-align: right;
+    // display: none;
+}
+
 .moveleft { /* make invisible on small */
+    text-align: left;
+}
+
+.moveleftTabVis { /* make invisible on small */
     text-align: left;
 }
 
@@ -52,7 +66,7 @@
     font-family: "WorkSansExtraBold";
     font-size: 2.4em;
     color: @common_teal;
-    text-align: left;
+    text-align: center;
 }
 
 .videoSubhead h2 {
@@ -83,6 +97,44 @@
     text-align: left;
 }
 
+.videoTxtHdr {
+    font-family: "RobotoCondensed";
+    font-size: 1.6em;
+    line-height: 2.0em;
+    color: #000;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.videoTxtReg {
+    font-family: "WorkSansRegular";
+    font-size: 1em;
+    color: @text_gray;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.videoTxtReg hr {
+    border: .5 solid #c4c4c4;
+    text-align: center;
+}
+
+.videoTxtCallOut h1 {
+    font-family: "WorkSansExtraBold";
+    font-size: 2.4em;
+    color: @coversharkMedBlue;
+    text-align: left;
+    margin-left: 70px;
+}
+
+.videoTxtCallOut h4 {
+    font-family: "WorkSansExtraBold";
+    font-size: 1.8em;
+    color: @text_gray;
+    text-align: left;
+    margin-left: 70px;
+}
+
 .video-emial-input {
     height: 2.5em;
     width: 18em;
@@ -101,7 +153,7 @@
     width: 180px;
     margin-top: 10px;
     background-color: @button_gray;
-    text-align: center;
+    text-align: left;
     border-radius: 5px;
     font-family: 'RobotoCondensed';
     font-size: 0.9em;
@@ -172,7 +224,17 @@
 }
 
 @media screen and (max-width:700px) {
-    
+    .wrapper-view1 {
+        background-color: #fff;
+        padding: 0px 0px 20px 0px;
+        // text-align: center;
+    }
+
+    .wrapper-view2 {
+        background-color: @bground_LgtGray;
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+    }
     .moveright {
         text-align: center;
     }
@@ -181,10 +243,54 @@
         text-align: center;
     }
     
+    .videoSubhead {
+        h2, h3, h4, h5 {
+            text-align: center;
+        }
+    }
+
     .video-emial-input {
         height: 2.0em;
         width: 15em;    
         margin-top: 10px;
         text-align: center;
-    }    
+    }
+    
+    .notForPhone {
+        display: none;
+    }
+    
+    .get-start-sub-button {
+        height: 28px;
+        width: 160px;
+        text-align: center;
+        border-radius: 5px;
+        line-height: 2.2em;
+    }
+
+    .videoTxtHdr {
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .videoTxtReg {        
+        text-align: center;
+    }
+    
+    .videoSubheadCircle {        
+        text-align: center;
+    }
+    
+    .PhnBlckPhn { /* make invisible on small */
+    text-align: center;
+    display: block;
+    }
+    
+    .PhnBlckTab { /* make invisible on small */
+        display: none;
+    }
+    
+    .moveleftTabVis { /* make invisible on small */
+        display: none;
+    }
 }
