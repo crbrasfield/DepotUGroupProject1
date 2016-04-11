@@ -1,11 +1,40 @@
-<ul>
-    <li class="how">HOW TO PLAY</li>
-    <li class="about">ABOUT</li>
-    <div class="line"></div>
-    <li class="promo">PROMOTIONS</li>
-    <li class="video">VIDEOS</li>
-</ul>
+<!--one div with class = footer
+inside that div, one div with class = row
+the div with class = row can ONLY have direct children with class = col--->
+
+
+<div class="footer">
+
+<div class="row">
+    <div class="col-tab-4 footer-cell">
+    <div class="images">
+    <img class="shark" src="images/logo-blue.svg">
+    <img class="facebook" src="images/fb-blue.svg">
+    <img class="twitter" src="images/twitter-blue.svg">
+    </div>
+    </div>
+    <div class="col-tab-4 footer-cell">
+        <div class="mid">
+    <!--<div class="lists">-->
+        <table>
+            <tr>       
+                <td>HOW TO PLAY</td>
+                <td class="promo">PROMOTIONS</td>
+            </tr>
+            <tr>
+                <!--<div class="line"></div>-->
+                <td>ABOUT</td>
+                <td class="videos">VIDEOS</td>
+            </tr>
+        </table>
+        </div>
+    <!--</div>-->
+</div>
+<div class="col-tab-4 footer-cell">
+    <div class="right">
 <div class="contact-button">CONTACT</div>
+</div>
+</div>
 <div class="ftrbottom">
     <div class="cover">
         <p>COVERSHARKS LLC</p>
@@ -13,4 +42,5 @@
     <div class="power">
         <p>POWERED BY PLATYPI</p>
     </div>
+</div>
 </div>
