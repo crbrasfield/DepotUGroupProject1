@@ -14,6 +14,11 @@
 }
 
 @font-face {
+    font-family: "WorkSansRegular";
+    src: url("../fonts/WorkSans-Regular.ttf");
+}
+
+@font-face {
     font-family: "RobotoCondensed";
     src: url("../fonts/Roboto-Condensed.ttf");
 }
@@ -30,9 +35,24 @@
     text-align: center;
 }
 
+.moveright { /* make invisible on small */
+    text-align: right;
+}
+
+.moveleft { /* make invisible on small */
+    text-align: left;
+}
+
 .video-row {
     text-align: center;
     margin: auto;
+}
+
+.videoSubhead h1 {
+    font-family: "WorkSansExtraBold";
+    font-size: 2.4em;
+    color: @common_teal;
+    text-align: left;
 }
 
 .videoSubhead h2 {
@@ -45,15 +65,62 @@
 .videoSubhead h3 {
     font-family: "RobotoCondensed";
     font-size: 2.0em;
-    color: #c4c4c4;
+    color: @text_gray;
     text-align: left;
 }
 
 .videoSubhead h4 {
     font-family: "RobotoCondensed";
-    font-size: 2.0em;
-    color: #c4c4c4;
+    font-size: 1.8em;
+    color: @text_gray;
     text-align: left;
+}
+
+.videoSubhead h5 {
+    font-family: "WorkSansExtraBold";
+    font-size: 1.6em;
+    color: @text_gray;
+    text-align: left;
+}
+
+.video-emial-input {
+    height: 2.5em;
+    width: 18em;
+    font-family: "WorkSansRegular";
+    text-align: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color: @text_gray;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.get-start-sub-button {
+    height: 32px;
+    width: 180px;
+    margin-top: 10px;
+    background-color: @button_gray;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'RobotoCondensed';
+    font-size: 0.9em;
+    color: white;
+    line-height: 2.3em;
+    letter-spacing: .2em;
+}
+
+.videoSubheadCircle {
+    font-family: "WorkSansExtraBold";
+    font-size: 1.6em;
+    color: #fff;
+    line-height: 1.8em;
+    background-color: @coversharkMedBlue;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0px;
 }
 
 .videobox {
@@ -75,7 +142,7 @@
 .videobox-text p {
     border: 0px;
     font-size: 1.0em;
-    color: #c4c4c4;
+    color: @text_gray;
 }
 
 .videobox-text h2 {
@@ -86,7 +153,7 @@
 
 .videobox-text h4 {
     font-family: "WorkSansExtraBold";
-    font-size: 1.6em;
+    font-size: 1.8em;
     color: @coversharkMedBlue;
 }
 
@@ -102,4 +169,22 @@
     color: white;
     line-height: 1.9em;
     letter-spacing: .2em;
+}
+
+@media screen and (max-width:700px) {
+    
+    .moveright {
+        text-align: center;
+    }
+
+    .moveleft {
+        text-align: center;
+    }
+    
+    .video-emial-input {
+        height: 2.0em;
+        width: 15em;    
+        margin-top: 10px;
+        text-align: center;
+    }    
 }
