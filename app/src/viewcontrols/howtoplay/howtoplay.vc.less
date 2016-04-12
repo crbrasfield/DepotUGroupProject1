@@ -13,34 +13,53 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+<<<<<<< HEAD
     height: 300px;
+=======
+    height: 250px;
+}
+
+.heroArea p {
+>>>>>>> f40251293ac20b1926d844ad042062276d7c9c28
     color: #fff;
     font-family: "WorkSansExtraLight";
     font-size: 3.0em;
     text-align: center;
-    line-height: 4.0em;
+    line-height: 3.8em;
 }
 
-.pagenav {
+
+.pagenavalign {
     text-align: center;
-    border: 2px;
-    border-color: @text_gray;
+    margin: auto;
 }
 
-.pagenav button {
+.pagenavActive {
+    text-align: center;
     width: 26%;
     height:  40px;
     font-family: "WorkSansRegular";
-    font-size: 1.4em;
-    line-height: 1em;
+    font-size: 1.2em;
+    line-height: 2em;
     color: @text_gray;
     background-color: @bground_gray;
     border-bottom: 3px solid @coversharkMedBlue;
-    // border-color: @coversharkMedBlue;
-    // border-style: hidden hidden solid hidden;
-    // border-bottom: 4px;
-    // border-bottom-color: @coversharkMedBlue;
-    margin-bottom: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.pagenavInactive {
+    text-align: center;
+    width: 26%;
+    height:  40px;
+    font-family: "WorkSansRegular";
+    font-size: 1.2em;
+    line-height: 2em;
+    color: @text_gray;
+    background-color: @bground_gray;
+    border-bottom: 3px solid @text_gray;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .wrapper-view1 {
@@ -274,6 +293,36 @@
 //     -------------------------------------
 
 @media screen and (max-width:700px) {
+    
+    .pagenavActive {
+        // text-align: center;
+        width: 50%;
+        // height:  40px;
+        // font-family: "WorkSansRegular";
+        // font-size: 1.2em;
+        // line-height: 2em;
+        // color: @text_gray;
+        // background-color: @bground_gray;
+        // border-bottom: 3px solid @coversharkMedBlue;
+        // cursor: pointer;
+        // display: inline-block;
+    }
+
+    .pagenavInactive {
+        // text-align: center;
+        width: 50%;
+        // height:  40px;
+        // font-family: "WorkSansRegular";
+        // font-size: 1.2em;
+        // line-height: 2em;
+        // color: @text_gray;
+        // background-color: @bground_gray;
+        // border-bottom: 3px solid @text_gray;
+        // cursor: pointer;
+        // display: inline-block;
+    }
+
+    
     .wrapper-view1 {
         background-color: #fff;
         padding: 0px 0px 20px 0px;
