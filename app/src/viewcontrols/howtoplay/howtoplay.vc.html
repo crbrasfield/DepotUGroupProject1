@@ -11,19 +11,25 @@
     <div plat-visible={{showMe}}>
             <div class="PhnBlckTab">
                     <div class="row">
-                                <div class="col-tab-4">
-                                        <img src="../../images/phone1.png" alt="Phone Image">
-                                </div>
-                                <div class="col-tab-8 videoSubhead"><h2>APP COMING SOON</h2>
-                                        <h5>
-                                        Our app is in development, but you can enter your email to be the first to recieve updates about CoverSharks.
-                                        </h5>
-                                        <div class="moveleft">
+                                <!--<div class="col-tab-4">
+                                        
+                                </div>-->
+                                <div class="col-tab-12 videoSubhead">
+                                        <img class="iphone" src="../../images/phone1.png" alt="Phone Image">
+                                        <div>
+                                            <h2>APP COMING SOON</h2>
+                                            <h5>
+                                            Our app is in development, but you can enter your email to be the first to recieve updates about CoverSharks.
+                                            </h5>
+                                            <div class="videoSubheadinput">
                                             <plat-input class="video-emial-input" type="email" placeholder="Email"></plat-input>
-                                                <div class="get-start-sub-button">
-                                                SUBSCRIBE
-                                                </div>
-                                        </div>
+                                            <p>
+                                            <plat-button class="get-start-sub-button">
+                                            SUBSCRIBE
+                                            </plat-button>
+                                            </p>
+                                            </div>
+                                       </div>
                                 </div>
                     </div>
                     <div class="row notForPhone"> <!-- This Row Will Be Hidden -->
@@ -44,9 +50,9 @@
         <div class="row PhnBlckPhn">
             <div class="col-phn-12">
                 <plat-input class="video-emial-input" type="email" placeholder="Email"></plat-input>
-                <div class="get-start-sub-button">
+                <plat-button class="get-start-sub-button">
                     SUBSCRIBE
-                </div>
+                </plat-button>
             </div>
         </div>
         
