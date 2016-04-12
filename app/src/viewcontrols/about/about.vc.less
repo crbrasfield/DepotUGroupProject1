@@ -1,3 +1,5 @@
+
+
 .hero-image-wrap {
     width: 100%;
     height: 20em;
@@ -61,7 +63,9 @@
     width: 100%;
     background-color: @coversharkMedBlue;
     text-align: center;
-    padding-top: 2.7em;
+    color: white;
+    font-family: "RobotoCondensed";
+    padding-top: 0.8em;
     
     input {
         font-family: "RobotoCondensed";
@@ -93,55 +97,64 @@
     width: 100%;
     text-align: center;
     background-color: @bground_gray;
+    padding-bottom: 20px;
     
     .header {
         margin-bottom: 5em;
         padding-top: 2em;
         
         .header-text-wrap {
-            width: 60vw;
+            width: 100vw;
             margin: auto;
         }
-        
         h1 {
             color: @common_teal;
             font-size: 2em;
             font-family: "WorkSansExtraBold";
         }
-        
         p {
+            margin: 0;
             color: @text_gray;
             font-family: "RobotoCondensed";
-
         }
     }
     
-    
-    img {
-        height: 100px;
+    .full {
+        height: 8em;
         width: auto;
         position: absolute;
+        top: -2.7em;
+        left: -4em;
     }
-    
     .card-wrap {
         width: 50vw;
         height: auto;
         margin: auto;
-        border-radius: 1em;
-        overflow: hidden;
+        // overflow: hidden;
         margin-bottom: 4em;
-        
-
+        position: relative;
     }
-    
-
     .card-header {
-        height: 3em;
+        color: white;
+        padding-top: 0.5em;
+        height: 4em;
         width: 100%;
         background-color: @coversharkMedBlue;
         margin: auto;
+        border-radius: 1em 1em 0 0;
         
-
+        h5 {
+            font-family: "WorkSansExtraBold";
+            margin: 0;
+            padding: 0;
+            font-size: 1.5em;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+            font-family: "WorkSansExtraBold";
+            font-size: 1em;
+        }
     }
     .card-body {
         background-color: white;
@@ -152,5 +165,133 @@
         text-align: left;
         width: 100%;
         height: auto;
+        border-radius: 0 0 1em 1em;
     }
+}
+
+.fantasy-sports {
+    padding-top: 3.5em;
+    padding-bottom: 4em;
+    height: auto;
+    width: 100%;
+    
+    .text-wrap {
+        margin: auto;
+        text-align: center;
+        width: 40vw;
+        
+        h1 {
+            font-family: "WorkSansExtraBold";
+            color: @common_teal;
+            font-size: 2em;
+        }
+        p {
+            font-family: "RobotoCondensed";
+            color: @text_gray;
+        }
+    }
+}
+
+//////////////////////////////////////////
+// When screen size is more than 700px //    
+//////////////////////////////////////////
+
+@media only screen and (min-width: 701px) {   
+    .mobile {
+        display: none;
+    }
+}
+
+//////////////////////////////////////////
+// When screen size is less than 700px //    
+//////////////////////////////////////////
+
+@media only screen and (max-width: 700px) {
+    
+.hero-image-wrap {
+    width: 100%;
+    height: 15em;
+    background-image: url(../../images/about-hero.jpg);
+    background-size: cover;
+    display: table;
+    padding: 0px;
+    margin: 0px;
+    p {
+        margin: 0px;
+        padding: 0px;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        color: white;
+        font-family: "WorkSansExtraLight";
+        font-size: 3.0em;
+        letter-spacing: 4px;
+    }
+}
+
+.how-it-started-wrap {
+    padding-top: 4em;
+    height: 28em;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    
+    img {
+        display: none;
+    }
+
+    .text-wrap {
+        width: 90vw;
+        margin: auto;
+
+    }
+} 
+
+.subscribe-wrap {
+    height: 10em;
+    width: 100%;
+    background-color: @coversharkMedBlue;
+    text-align: center;
+    
+    input {
+        font-family: "RobotoCondensed";
+        width: 30em;
+        height: 40px;
+        text-align: left;
+        border-radius: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    
+}
+
+
+.team-wrap {
+    .header {
+        .header-text-wrap {
+            width: 60vw;
+            margin: auto;
+        }
+    }
+    .full {
+        display: none;
+    }
+    .card-wrap {
+        width: 80vw;
+    }
+}
+.fantasy-sports {
+    .text-wrap {
+        width: 90vw;
+    }
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
