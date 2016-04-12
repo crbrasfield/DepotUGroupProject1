@@ -8,31 +8,6 @@
     }
 }
 
-@font-face {
-    font-family: "WorkSansExtraBold";
-    src: url("../fonts/WorkSans-ExtraBold.ttf");
-}
-
-@font-face {
-    font-family: "WorkSansRegular";
-    src: url("../fonts/WorkSans-Regular.ttf");
-}
-
-@font-face {
-    font-family: "WorkSansExtraLight";
-    src: url("../fonts/WorkSans-ExtraLight.ttf");
-}
-
-@font-face {
-    font-family: "RobotoCondensed";
-    src: url("../fonts/Roboto-Condensed.ttf");
-}
-
-@font-face {
-    font-family: "RobotoBoldCondensed";
-    src: url("../fonts/Roboto-BoldCondensed.ttf");
-}
-
 .heroArea {
     background-image: url(../../images/how-to-play-hero.jpg);
     background-repeat: no-repeat;
@@ -60,8 +35,8 @@
     line-height: 1em;
     color: @text_gray;
     background-color: @bground_gray;
-    border: 1px;
-    border-color: @coversharkMedBlue;
+    border-bottom: 3px solid @coversharkMedBlue;
+    // border-color: @coversharkMedBlue;
     // border-style: hidden hidden solid hidden;
     // border-bottom: 4px;
     // border-bottom-color: @coversharkMedBlue;
@@ -344,12 +319,11 @@
     }
     
     .videobox {
-        background-color: #fff;
         box-shadow: 0px 2px 0px #c4c5c4; /* horiz, vert, spread, color */
         padding: 8px;
         width: 319px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: auto !important;
+        margin-right: auto !important;
         margin-bottom: 15px;
         float: none;
     }
