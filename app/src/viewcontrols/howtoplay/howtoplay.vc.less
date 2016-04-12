@@ -24,7 +24,6 @@
     line-height: 3.8em;
 }
 
-
 .pagenavalign {
     text-align: center;
     margin: auto;
@@ -32,7 +31,7 @@
 
 .pagenavActive {
     text-align: center;
-    width: 26%;
+    width: 50%;
     height:  40px;
     font-family: "WorkSansRegular";
     font-size: 1.2em;
@@ -46,7 +45,7 @@
 
 .pagenavInactive {
     text-align: center;
-    width: 26%;
+    width: 50%;
     height:  40px;
     font-family: "WorkSansRegular";
     font-size: 1.2em;
@@ -199,7 +198,7 @@
 .get-start-sub-button {
     height: 40px;
     width: 180px;
-    margin-top: 10px;
+    margin-top: 16px;
     background-color: @button_gray;
     text-align: center;
     border-radius: 5px;
@@ -274,7 +273,8 @@
     height: 25px;
     width: 200px;
     background-color: @button_gray;
-    margin: auto;
+    // margin: auto;
+    margin-top: 40px;
     text-align: center;
     border-radius: 5px;
     font-family: 'RobotoCondensed';
@@ -285,42 +285,15 @@
 }
 
 //     -------------------------------------
+//     -------------------------------------
 //     media break points below ------------
+//     -------------------------------------
 //     -------------------------------------
 
 @media screen and (max-width:700px) {
-    
-    .pagenavActive {
-        // text-align: center;
-        width: 50%;
-        // height:  40px;
-        // font-family: "WorkSansRegular";
-        // font-size: 1.2em;
-        // line-height: 2em;
-        // color: @text_gray;
-        // background-color: @bground_gray;
-        // border-bottom: 3px solid @coversharkMedBlue;
-        // cursor: pointer;
-        // display: inline-block;
-    }
-
-    .pagenavInactive {
-        // text-align: center;
-        width: 50%;
-        // height:  40px;
-        // font-family: "WorkSansRegular";
-        // font-size: 1.2em;
-        // line-height: 2em;
-        // color: @text_gray;
-        // background-color: @bground_gray;
-        // border-bottom: 3px solid @text_gray;
-        // cursor: pointer;
-        // display: inline-block;
-    }
-
-    
+        
     .wrapper-view1 {
-        background-color: #fff;
+        background-color: @bground_LgtGray;
         padding: 0px 0px 20px 0px;
     }
 
@@ -334,12 +307,19 @@
     }
 
     .moveleft {
-        text-align: center;
+        text-align: center !important;
+        padding: 0px !important;
+    }
+    
+    .videoSubheadCircle {
+        margin: auto !important;
+        float: none;
     }
     
     .videoSubhead {
         h2, h3, h4, h5 {
-            text-align: center;
+            text-align: center !important;
+            margin: auto !important;
         }
     }
 
@@ -361,12 +341,14 @@
         text-align: center;
         border-radius: 5px;
         line-height: 2.2em;
+        margin: auto;
+        margin-top: 10px;
     }
     
     .videobox {
         box-shadow: 0px 2px 0px #c4c5c4; /* horiz, vert, spread, color */
-        padding: 8px;
-        width: 319px;
+        // padding: 8px;
+        // width: 319px;
         margin-left: auto !important;
         margin-right: auto !important;
         margin-bottom: 15px;
