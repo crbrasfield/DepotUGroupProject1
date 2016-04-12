@@ -1,7 +1,9 @@
-<div class="heroArea">HOW TO PLAY</div>
+<div class="heroArea">
+    HOW TO PLAY
+</div>
 
 <div class="pagenav">
-    <button plat-tap="showMe()"> link 1 </button><button plat-tap="dontShowMe()"> link 2</button>
+    <button plat-tap="showMe()"> Getting Started </button><button plat-tap="dontShowMe()"> Videos</button>
 </div>
 
 <div plat-visible={{showMe}} class="wrapper-view1">
@@ -30,19 +32,17 @@
     </div>
     <div class="row PhnBlckPhn">
         <div class="col-phn-12">
-            
             <plat-input class="video-emial-input" type="email" placeholder="Email"></plat-input>
             <div class="get-start-sub-button">
                 SUBSCRIBE
             </div>
         </div>
     </div>
-    <!-- use padding on wrapper for space, drop padding on sml view -->
     <div class="row notForPhone"> <!-- This Row Will Be Hidden -->
         <div class="col-tab-12">
-            Our contests are based on real-time point spreads that are used to establish favorites and underdogs.
-            
-            Instead of picking players based on their statistics, our contests are based on outcomes of games in real-time. The concept behind our game is fun, easy, mobile and patent pending
+            <p class="marqueeSubhead">Our contests are based on real-time point spreads that are used to establish favorites and underdogs.</p>
+
+            <p class="marqueeText">Instead of picking players based on their statistics, our contests are based on outcomes of games in real-time. The concept behind our game is fun, easy, mobile and patent pending</p>
         </div>
     </div>
     <div class="row"> <!-- start gray -->
@@ -112,10 +112,8 @@
     </div>
 </div> 
 
-<!-- close wrapper view 1 -->
-
 <!-- //////////////////////////////////////////// -->
-<!--     BELOW PAGE TWO WILL BE SIT AS HIDDEN     -->
+<!--     BELOW PAGE TWO WILL BE SET AS HIDDEN     -->
 <!-- //////////////////////////////////////////// -->
 
 <div plat-visible={{dontShowMe}}  class="wrapper-view2">

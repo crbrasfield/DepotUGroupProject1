@@ -28,6 +28,11 @@
     src: url("../fonts/Roboto-Condensed.ttf");
 }
 
+@font-face {
+    font-family: "RobotoBoldCondensed";
+    src: url("../fonts/Roboto-BoldCondensed.ttf");
+}
+
 .heroArea {
     background-image: url(../../images/how-to-play-hero.jpg);
     background-repeat: no-repeat;
@@ -41,34 +46,68 @@
     line-height: 4.0em;
 }
 
+.pagenav {
+    text-align: center;
+    border: 2px;
+    border-color: @text_gray;
+}
+
+.pagenav button {
+    width: 26%;
+    height:  40px;
+    font-family: "WorkSansRegular";
+    font-size: 1.4em;
+    line-height: 1em;
+    color: @text_gray;
+    background-color: @bground_gray;
+    border: 1px;
+    border-color: @coversharkMedBlue;
+    // border-style: hidden hidden solid hidden;
+    // border-bottom: 4px;
+    // border-bottom-color: @coversharkMedBlue;
+    margin-bottom: 5px;
+}
+
 .wrapper-view1 {
-    background-color: #fff;
-    padding: 0px 40px 20px 40px;
+    background-color: @bground_gray;
+    padding: 0px 0px 20px 0px;
     // text-align: center;
 }
 
 .wrapper-view2 {
     background-color: @bground_LgtGray;
-    padding: 0px 40px 0px 40px;
+    padding: 0px 60px 20px 60px;
     text-align: center;
+}
+
+.whitebground {
+    background-color: #fff;
 }
 
 .moveright { /* make invisible on small */
     text-align: right;
 }
 
+.moveleft { /* make invisible on small */
+    text-align: left;
+    padding: 0px 60px 0px 60px;
+}
+
 .PhnBlckPhn {
     display: none;
     text-align: center;
+    background-color: #fff;
 }
 
 .PhnBlckTab {
     text-align: right;
-    // display: none;
+    background-color: #fff;
+    padding: 0px 60px 0px 60px;
 }
 
-.moveleft { /* make invisible on small */
-    text-align: left;
+.notForPhone {
+    background-color: #fff;
+    padding: 0px 60px 0px 60px;
 }
 
 .moveleftTabVis { /* make invisible on small */
@@ -157,27 +196,40 @@
     height: 2.5em;
     width: 18em;
     font-family: "WorkSansRegular";
+    font-size: 1.2em;
     text-align: left;
     border-style: solid;
     border-width: 1px;
     border-color: @text_gray;
     border-radius: 8px;
     margin-top: 10px;
-    padding: 5px;
+    padding: 5px 5px 5px 10px;
 }
 
 .get-start-sub-button {
-    height: 32px;
+    height: 40px;
     width: 180px;
     margin-top: 10px;
     background-color: @button_gray;
-    text-align: left;
+    text-align: center;
     border-radius: 5px;
     font-family: 'RobotoCondensed';
     font-size: 0.9em;
     color: white;
-    line-height: 2.3em;
+    line-height: 2.9em;
     letter-spacing: .2em;
+}
+
+.marqueeSubhead {
+    font-family: "WorkSansExtraBold";
+    color: @coversharkMedBlue;
+    font-size: 1.2em;
+}
+
+.marqueeText {
+    font-family: "RobotoBoldCondensed";
+    color: @text_gray;
+    font-size: 1em;
 }
 
 .videoSubheadCircle {
@@ -200,6 +252,7 @@
     width: 319px;
     margin-left: 15px;
     margin-right: 15px;
+    margin-bottom: 15px;
 }
 
 .videobox-img {
@@ -241,11 +294,14 @@
     letter-spacing: .2em;
 }
 
+//     -------------------------------------
+//     media break points below ------------
+//     -------------------------------------
+
 @media screen and (max-width:700px) {
     .wrapper-view1 {
         background-color: #fff;
         padding: 0px 0px 20px 0px;
-        // text-align: center;
     }
 
     .wrapper-view2 {
@@ -275,6 +331,7 @@
     }
     
     .notForPhone {
+        background-color: @bground_gray;
         display: none;
     }
     
@@ -284,6 +341,17 @@
         text-align: center;
         border-radius: 5px;
         line-height: 2.2em;
+    }
+    
+    .videobox {
+        background-color: #fff;
+        box-shadow: 0px 2px 0px #c4c5c4; /* horiz, vert, spread, color */
+        padding: 8px;
+        width: 319px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        float: none;
     }
 
     .videoTxtHdr {
@@ -299,6 +367,11 @@
         text-align: center;
     }
     
+    .video-row {
+        text-align: center;
+        margin: auto;
+    }
+
     .PhnBlckPhn { /* make invisible on small */
     text-align: center;
     display: block;
