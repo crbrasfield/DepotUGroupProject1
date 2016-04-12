@@ -1,4 +1,10 @@
-<div class="wrapper-view1">
+<div class="heroArea">HOW TO PLAY</div>
+
+<div class="pagenav">
+    <button plat-tap="showMe()"> link 1 </button><button plat-tap="dontShowMe()"> link 2</button>
+</div>
+
+<div plat-visible={{showMe}} class="wrapper-view1">
     <div class="row PhnBlckTab">
             <div class="col-tab-5 col-phn-12 moveright">
                 <img src="../../images/phone1.png" alt="Phone Image">
@@ -111,13 +117,8 @@
 <!-- //////////////////////////////////////////// -->
 <!--     BELOW PAGE TWO WILL BE SIT AS HIDDEN     -->
 <!-- //////////////////////////////////////////// -->
-<p>space</p>
-<p>space</p>
-<p>space</p>
-<p>space</p>
-<p>space</p>
 
-<div class="wrapper-view2">
+<div plat-visible={{dontShowMe}}  class="wrapper-view2">
     <div class="videoSubhead">
         <h3>Pick Your Contest</h3>
     </div>
