@@ -1,9 +1,9 @@
 <div class="heroArea">
-    HOW TO PLAY
+    <p>HOW TO PLAY</p>
 </div>
 
-<div class="pagenav">
-    <button plat-tap="showMe()"> Getting Started </button><button plat-tap="dontShowMe()"> Videos</button>
+<div class="row pagenavalign">
+    <div plat-tap="showMe()" class="{{navStlyleActive}}"> Getting Started </div><div plat-tap="dontShowMe()" class="{{navStlyleInactive}}"> Videos</div>
 </div>
 
 <div plat-visible={{showMe}} class="wrapper-view1">

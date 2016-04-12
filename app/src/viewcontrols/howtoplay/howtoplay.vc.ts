@@ -6,17 +6,23 @@ export default class HowtoplayViewControl extends BaseViewControl {
 
     context: any = {
         showMe: true,
-        dontShowMe: false
+        navStlyleActive: "pagenavActive",
+        dontShowMe: false,
+        navStlyleInactive: "pagenavInactive"
     };
     
     showMe(): void {
         this.context.showMe = true;
+        this.context.navStlyleActive = "pagenavActive";
         this.context.dontShowMe = false;
+        this.context.navStlyleInactive = "pagenavInactive"
     }
     
     dontShowMe(): void {
         this.context.showMe = false;
+        this.context.navStlyleActive = "pagenavInactive";
         this.context.dontShowMe = true;
+        this.context.navStlyleInactive = "pagenavActive"
     }
 }
 
