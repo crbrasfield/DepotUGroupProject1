@@ -40,14 +40,20 @@
     background-size: cover;
     background-position: center;
 }
+
+.promo-wrap {
+   margin: 0;
+   height: 100%;
+   width: 100%;
+   text-align: center !important;
+   padding-top: 5em;
+}
 .featPromo p {
-    position: absolute; 
     color: white; 
     font-family: 'WorkSansXLite';
     letter-spacing: 5px;
-    margin-left: 22%;
-    margin-top: 80px;
     font-size: 3.0em;
+    text-align: center;
 }
 
 
@@ -85,12 +91,7 @@
     padding-top:0;
 }
 
-// .yeti2 img {
-// //    display: none;
-//    height:400px;
-//    width: auto;
-//    padding-top:0;
-// } 
+
 
 .register-button1 {
     height: 50px;
@@ -105,20 +106,34 @@
     font-size: 18px; 
 }
 
-// .prompt-title2 span {
-//     font-family: 'RobotoBoldCondensed';
-// }
-
-.prompt-body {
-    height: 350px;
-    width: 500px;
-    
-    p {
-    font-family: 'WorkSansReg';
-    color: @text_gray;
-    }
+.full-modal {
+    #platui > #Modal;
+    .plat-modal-prompt(prompt-title-background-color; @bground_gray);
+    .plat-modal-prompt(prompt-title-color; @coversharkMedBlue);
+    .plat-modal-prompt(prompt-title-width; 100%);
 }
 
+
+.prompt-body {
+    height: 22em;
+    text-align: center;
+    color: @text_gray;
+}
+.prompt-title {
+    position: relative;
+    font-family: 'RobotoBoldCondensed';
+    
+    #exit {
+        position: fixed;
+        right: 1%;
+        top: 1%;
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        outline: none;
+    }
+    
+}
 #first {
     height: 30px;
     width: 405px;
@@ -153,40 +168,6 @@
     font-family: 'WorkSansReg';
 }
 
-
-// .part2-2 {
-//     // display: none;
-//     padding-left: 100px;
-//     padding-right: -100px;
-//     padding-bottom: 200px;
-    
-//     h6 {
-//       padding-top: 50px; 
-//       font-family: 'RobotoBoldCondensed';
-//       letter-spacing: 1px;
-//       color: @text_gray;  
-//     }
-    
-//     h2 {
-//       font-family: 'WorkSansXBold';
-//       color: @common_teal; 
-//     }
-// } 
-
-// .part2-2 {
-//     margin-bottom: 100px;
-    
-//     h5 {
-//       font-family: 'WorkSansXBold';
-//       color: @common_teal;     
-//     }
-    
-//     p{
-//       font-family: 'WorkSansReg';
-//       color: @text_gray;
-//     }
-    
-// }
 
 .register-button3 {
     position: absolute;
@@ -234,73 +215,40 @@
   .yeti2 img {
    height:300px;
    width: auto;
-   margin-top: -200px;
 } 
-
-// .part2-2 {
-//     height:auto;
-//     padding-right: 0px;
-//     padding-bottom:100px;
-    
-//     h6 {
-//       padding-top: 50px; 
-//       font-family: 'RobotoBoldCondensed';
-//       letter-spacing: 1px;
-//       color: @text_gray;  
-//     }
-    
-//     h2 {
-//       font-family: 'WorkSansXBold';
-//       color: @common_teal; 
-//     }
-// } 
-
-// .part3-2 {
-//     margin-bottom: 100px;
-    
-//     h5 {
-//       font-family: 'WorkSansXBold';
-//       color: @common_teal;     
-//     }
-    
-//     p{
-//       font-family: 'WorkSansReg';
-//       color: @text_gray;
-//     }
-// }
-
-
-      }
-//   .prompt-body2 {
-//     height: 350px;
-//     width: 500px;
-    
-//     p {
-//     font-family: 'WorkSansReg';
-//     color: @text_gray;
-//     }
-//   }
-// .prompt-title2 span {
-//     font-family: 'RobotoBoldCondensed';
-// }
+    }
 
 .part2-2 {
-    padding-left: 100px;
-    padding-right: -100px;
-    padding-bottom: 200px;
+    height:auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 100px;
+    text-align: center;
     
     h6 {
-      padding-top: 50px; 
-      font-family: 'RobotoBoldCondensed';
-      letter-spacing: 1px;
-      color: @text_gray;  
-    }
-    
+        padding-top: 50px; 
+        font-family: 'RobotoBoldCondensed';
+        letter-spacing: 1px;
+        color: @text_gray;
+        }
     h2 {
       font-family: 'WorkSansXBold';
-      color: @common_teal; 
+      color: @common_teal;
+    } 
+    
+    h5{
+      font-family: 'WorkSansXBold';
+      color: @common_teal;    
+    }   
+    p {
+        font-family: 'WorkSansReg';
+        color: @text_gray;
+        
     }
-} 
+}
+    
+
+
 
 
 
@@ -314,11 +262,11 @@ yeti {
 }
 
 
-.full-modal {
-    #platui > #Modal;
-    .plat-modal-prompt(prompt-title-background-color; @bground_gray);
-    .plat-modal-prompt(prompt-title-color; @coversharkMedBlue);
-}
+// .full-modal {
+//     #platui > #Modal;
+//     .plat-modal-prompt(prompt-title-background-color; @bground_gray);
+//     .plat-modal-prompt(prompt-title-color; @coversharkMedBlue);
+// }
 
 .phone {
     
@@ -382,16 +330,30 @@ yeti {
       color: @coversharkMedBlue;
       font-family: 'RobotoBoldCondensed';
       word-spacing: 2px;
-      font-size: 18px;
+      font-size: 22px;
+      background-color: @bground_gray;
+      position: relative;
+      
+      #exit {
+        position: fixed;
+        right: 1%;
+        top: 5%;
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        outline: none;
+    }
+      
   }
   
   .prompt-body2 {
       text-align: center;
+      background-color: @bground_gray;
+      height: 110vh;
      
     p {
       font-family: 'WorkSansReg';
       color: @text_gray;
-      word-spacing: 5px;
     }  
   }
 }
