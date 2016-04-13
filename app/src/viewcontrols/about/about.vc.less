@@ -1,3 +1,6 @@
+.about-promo-hero-wrap {
+    margin: -25px;
+}
 .hero-image-wrap {
     width: 100%;
     height: 20em;
@@ -6,7 +9,7 @@
     display: table;
     padding: 0px;
     margin: 0px;
-    h1 {
+    p {
         margin: 0px;
         padding: 0px;
         display: table-cell;
@@ -14,22 +17,19 @@
         text-align: center;
         color: white;
         font-family: "WorkSansExtraLight";
+        font-size: 3.0em;
         letter-spacing: 4px;
     }
-
 }
-
 .how-it-started-wrap {
     padding-top: 4.5em;
     height: 35em;
     width: 100%;
-    
     img {
         width: auto;
         height: 25em;
         text-align: right;
         float: right;
-
     }
     h1 {
        font-family: "WorkSansExtraBold";
@@ -44,20 +44,191 @@
         font-size: 1.3em;
         color: @text_gray;
     }
-    
     p {
         font-family: "WorkSansRegular";
     }
-    
     .text-wrap {
         width: 23em;
         padding-left: 1em;
     }
 }
-
 .subscribe-wrap {
-    height: 7em;
+    height: 8em;
     width: 100%;
     background-color: @coversharkMedBlue;
     text-align: center;
+    color: white;
+    font-family: "RobotoCondensed";
+    padding-top: 0.8em;
+    input {
+        font-family: "RobotoCondensed";
+        width: 30em;
+        height: 40px;
+        text-align: left;
+        border-radius: 0.5em;
+        margin-right: 0.5em;
+    }
+    .sub-button {
+        display: inline-block;
+        font-family: "RobotoCondensed";
+        color: white;
+        background-color: #393a3c;
+        height: 40px;
+        width: 200px;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 0.5em;
+        letter-spacing: 2px;
+        margin: auto;
+    }
+}
+.team-wrap {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    background-color: @bground_gray;
+    padding-bottom: 20px;
+    .header {
+        margin-bottom: 5em;
+        padding-top: 2em;
+        
+        .header-text-wrap {
+            width: 75vw;
+            margin: auto;
+        }
+        h1 {
+            color: @common_teal;
+            font-size: 2em;
+            font-family: "WorkSansExtraBold";
+        }
+        p {
+            margin: 0;
+            color: @text_gray;
+            font-family: "RobotoCondensed";
+        }
+    }
+    .full {
+        height: 8em;
+        width: auto;
+        position: absolute;
+        top: -2.7em;
+        left: -4em;
+    }
+    .card-wrap {
+        width: 50vw;
+        height: auto;
+        margin: auto;
+        // overflow: hidden;
+        margin-bottom: 4em;
+        position: relative;
+    }
+    .card-header {
+        color: white;
+        padding-top: 0.5em;
+        height: 4em;
+        width: 100%;
+        background-color: @coversharkMedBlue;
+        margin: auto;
+        border-radius: 1em 1em 0 0;
+        h5 {
+            font-family: "WorkSansExtraBold";
+            margin: 0;
+            padding: 0;
+            font-size: 1.5em;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+            font-family: "WorkSansExtraBold";
+            font-size: 1em;
+        }
+    }
+    .card-body {
+        background-color: white;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: left;
+        width: 100%;
+        height: auto;
+        border-radius: 0 0 1em 1em;
+    }
+}
+.fantasy-sports {
+    padding-top: 3.5em;
+    padding-bottom: 4em;
+    height: auto;
+    width: 100%;
+    .text-wrap {
+        margin: auto;
+        text-align: center;
+        width: 40vw;
+        h1 {
+            font-family: "WorkSansExtraBold";
+            color: @common_teal;
+            font-size: 2em;
+        }
+        p {
+            font-family: "RobotoCondensed";
+            color: @text_gray;
+        }
+    }
+}
+
+//////////////////////////////////////////
+// When screen size is more than 700px //    
+//////////////////////////////////////////
+
+@media only screen and (min-width: 701px) {   
+    .mobile {
+        display: none;
+    }
+}
+
+//////////////////////////////////////////
+// When screen size is less than 700px //    
+//////////////////////////////////////////
+
+@media only screen and (max-width: 700px) {
+.how-it-started-wrap {
+    padding-top: 4em;
+    padding-bottom: 2em;
+    height: auto;
+    text-align: center;
+    img {
+        display: none;
+    }
+    .text-wrap {
+        width: 90vw;
+        margin: auto;
+    }
+} 
+.subscribe-wrap {
+    height: 10em;
+    width: 100%;
+    input {
+        margin-bottom: 0.5em;
+        width: 85vw;
+    }
+}
+.team-wrap {
+    .header {
+        .header-text-wrap {
+            width: 85vw;
+            margin: auto;
+        }
+    }
+    .full {
+        display: none;
+    }
+    .card-wrap {
+        width: 80vw;
+    }
+}
+.fantasy-sports {
+    .text-wrap {
+        width: 90vw;
+    }
+}   
 }

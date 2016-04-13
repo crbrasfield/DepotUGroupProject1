@@ -2,136 +2,100 @@
     #platui > #media;
     #platui > #mixins;
     #platui > #variables;
-
     [plat-control="navbar"] {
-
     }
 }
-
 .no-scroll {
     overflow: hidden;
+    position: static;
 }
-
-@font-face {
-   font-family: "WorkSansBold";
-   src: url("fonts/WorkSans-SemiBold.ttf");
-}
-
-
 .modal-wrap {
     background:rgba(255,255,255,0.1);
     text-align: center;
     height: 100vh;
     color:#192246;
-    padding-top: 0.5em;
-    
+    // padding-top: 0.5em;
     #x {
         color: #192246;
         text-align: right;
-        padding-right: 0.5em;
-        font-size: 4em;
-        padding-top: 0px !important;
+        padding-right: 1em;
+        font-size: 2em;
+        padding-top: 20px !important;
         overflow-x: hidden;
         overflow-y: hidden;
     }
-    
     a:link {
         color: #192246;
     }
-    
     img {
         width: 20em;
         height: auto;
     }
-    
     h1 {
     font-family: "WorkSansBold";
     }
-    
     .logos {
         display: inline-block;
         img {
-            height: 4em;
+            height: 2em;
             width: auto;
-            margin: 1.5em;
+            margin: 0 0 0 1.5em;
         }
     }
 }
-
-
-
-.body-wrap {
-    padding-top: 5em;
-}
-
 .top-nav-logo-continer {
     background-color: #f3f4f5;
     width: 7em;
     height: 72px;
     float: right;
 }
-
 .top-nav {
     height: 4.5em;
     width: 100%;
     background-color: #feffff;
-
     margin-top: -1em;
     line-height: 3.5em;
     font-family: "WorkSansBold";
     z-index: 1000;
-
     img {
         padding-top: 1em;
     }
-    
     #fbLogo {
         float:right;
         height: 53px;
         width: auto;
         padding-right: 1em;
         padding-left: 1em;
-
         padding-top: 2em;
-
     }
-    
     #twitLogo {
         float:right;
         width: 53px;
         height: auto;
         padding-right: 1em;
         padding-left: 1em;
-
         padding-top: 2.2em;
-
     }
-    
     #sharkLogo {
         float:left;
         height: 60px;
         width: auto;
         padding-top: 1.9em;
         padding-left: 2em;
-
     }
-    
     ul {
         list-style: none;
         text-align: right;
     }
-    
     li {
         display: inline;
         color: #b4b6b8;
         padding-right: 3em;
     }
 }
-
-//////////////////////////////////////////
-// When screen size is more than 767px //    
-//////////////////////////////////////////
-
+  /////////////////////////////////////////
+ // When screen size is more than 700px //   
+/////////////////////////////////////////
 @media only screen and (min-width: 700px)   {
     #sharkLogoNotext {
         display: none;
@@ -143,62 +107,56 @@
     .top-nav {
         position: fixed;
     }
-    
+    .body-wrap {
+    padding-top: 5em;
+    }   
 }
-
-//////////////////////////////////////////
-// When screen size is less than 767px //    
-//////////////////////////////////////////
-
+  /////////////////////////////////////////
+ // When screen size is less than 700px //    
+/////////////////////////////////////////
 @media only screen and (max-width: 700px) {
-    
      #sharkLogo {
         display: none;
     }
-    
     #sharkLogoNotext {
         float:left;
-        height: 70px;
+        height: 40px;
         width: auto;
-        padding-top: 2.2em;
+        margin-top: 1em;
+
         padding-left: 2em;
     }
-    
     .top-nav {
         position: fixed;
+        box-shadow: 1px 1px 15px;
     }
-    
     .top-nav ul {
         display: none;
     }
-    
     .top-nav-logo-continer{
         display: none;
     }
-    
     .smallNavWrap {
-        background-color: #192246;
-        height: 6em;
+        background-color: white;
+        height: 3em;
         width: 100%;
+        padding-top: 12px;
     }
-    
     .hamburger {
         background-color: transparent;
         cursor: pointer;
         float: right;
         opacity: 1;
         width: 100px;
-        padding-top: 40px;
+        padding-top: 1.7em;
+        margin-right: -40px;
     }
-    
     .ham-line {
-        border-bottom: 4px solid white;
+        border-bottom: 4px solid #192246;
         width: 35px;
-        padding-bottom: 2px;
-        margin-bottom: 6px;
+        margin: 5px;
         border-radius: 5px;
         clear: both;
         margin-left: 0px;
     }
-    
 }
