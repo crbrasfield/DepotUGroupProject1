@@ -109,6 +109,7 @@
 
         .PhnBlckPhn {
             display: none;
+            background-color: #fff;
         }
 
         .PhnBlckTab {
@@ -133,13 +134,15 @@
 
         .videoSubhead {
             text-align: center;
-            margin-bottom: 0.5em;
+            margin-bottom: 0.5rem;
+            background-color: #fff;
         }
 
         .videoSubhead h1 {
             font-family: "WorkSansExtraBold";
             color: @common_teal;
             text-align: center;
+            background-color: @bground_gray;
         }
 
         .videoSubhead h2 {
@@ -151,6 +154,7 @@
             font-family: "RobotoCondensed";
             color: @text_gray;
             padding: 0rem 2rem 0rem 2rem;
+            background-color: @bground_gray;
         }
 
         .videoSubhead h5 {
@@ -294,7 +298,7 @@
         //     media break points Above a size -----
         //     -------------------------------------
         //     -------------------------------------
-        @media screen and (min-width:1050px) {
+        @media screen and (min-width:700px) {
             
             .video-container {
                 &:nth-of-type(1n) {
@@ -323,7 +327,7 @@
         //     -------------------------------------
         //     -------------------------------------
 
-        @media screen and (max-width:1000px) {
+        @media screen and (max-width:700px) {
                 
             .wrapper-view1 {
                 background-color: @bground_LgtGray;
@@ -395,8 +399,7 @@
 
             .PhnBlckPhn {
             text-align: center;
-            background-color: #fff !important;
-            padding: 0px 20px 0px 20px;
+            background-color: #fff;
             display: block;
             }
             
