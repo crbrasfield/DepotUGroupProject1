@@ -1,3 +1,4 @@
+
 <nav>
     <div class="top-nav">
         <div class="smallNavWrap">
@@ -7,17 +8,17 @@
                 <div class="ham-line"></div>
             </div>
 
-            <a href="/home"><img id="sharkLogo" src="images/logo-color.svg"></a>
-            <img id="sharkLogoNotext" src="images/coversharks-mark-color.svg">
+            <plat-link plat-options="{ view: home }"><img id="sharkLogo" src="images/logo-color.svg"></plat-link>
+            <plat-link plat-options="{ view: home }"><img id="sharkLogoNotext" src="images/coversharks-mark-color.svg"></plat-link>
             <div class="top-nav-logo-continer">
                 <img id="twitLogo" src="images/twitter-grey.svg">
                 <img id="fbLogo" src="images/fb-grey.svg">
             </div>
         </div>
         <ul>
-            <li><a href="/howtoplay">HOW TO PLAY</li></a>
-                <li><a href="/about">ABOUT</li></a>
-                    <li><a href="/promotions">PROMOTIONS</li></a>
+            <plat-link plat-options="{ view: howtoplay }"><li>HOW TO PLAY</li></plat-link>
+                <plat-link plat-options="{ view: about }"><li>ABOUT</li></plat-link>
+                    <plat-link plat-options="{ view: promotions }"><li>PROMOTIONS</li></plat-link>
         </ul>
     </div>
 </nav>
@@ -27,11 +28,11 @@
 <plat-modal plat-options="{ transition: 'left' }" plat-bind="modal">
     <div class="modal-wrap">
         <h2 id="x" plat-tap="toggleModal()"> X </h2>
-        <img src="images/logo-color.svg">
-        <h1><a href="/ ">HOME</h1></a>
-        <h1><a href="/howtoplay ">HOW TO PLAY</h1></a>
-        <h1><a href="/about ">ABOUT</h1></a>
-        <h1><a href="/promotions ">PROMOTIONS</h1></a>
+        <plat-link plat-options="{ view: home }"><img src="images/logo-color.svg"></plat-link>
+        <plat-link plat-options="{ view: home }" plat-tap="toggleModal()"><h1>HOME</h1></plat-link>
+        <plat-link plat-options="{ view: howtoplay }" plat-tap="toggleModal()"><h1>HOW TO PLAY</h1></plat-link>
+        <plat-link plat-options="{ view: about }" plat-tap="toggleModal()"><h1>ABOUT</h1></plat-link>
+        <plat-link plat-options="{ view: promotions }" plat-tap="toggleModal()"><h1>PROMOTIONS</h1></plat-link>
         <div class="logos">
             <img src="images/fb-blue.svg " alt="img ">
             <img src="images/twitter-blue.svg " alt="img ">
