@@ -1,0 +1,75 @@
+<div class="featPromo">
+    <h1>FEATURED PROMOTIONS</h1>
+</div>
+
+<div class="row row-tab">
+
+    <div class="col-tab-6">
+        <div class="part2">
+            <h6>REGISTER NOW FOR A CHANCE TO WIN A</h6>
+            <h2>FREE YETI COOLER<br> or APPLE WATCH</h2>
+            <h5>Through April 17th</h5>
+            <p>Auburn vs Alabama Iron Bowl Promotion Free
+                <br>giveaways at on-site promotions</p>
+            <plat-button class="register-button1" plat-tap="toggleModalMobile()">REGISTER</plat-button>
+
+
+        </div>
+    </div>
+    <div class="col-tab-6">
+        <div class="yeti">
+            <img src="images/apple-watch-and-yeti-image.png">
+        </div>
+    </div>
+</div>
+
+<div class="row row-phn">
+
+    <div class="col-phn-12">
+        <div class="part2-2">
+            <h6>REGISTER NOW FOR A CHANCE TO WIN A</h6>
+            <h2>FREE YETI COOLER<br> or APPLE WATCH</h2>
+            <h5>Through April 17th</h5>
+            <p>Auburn vs Alabama Iron Bowl Promotion Free giveaways at on-site promotions</p>
+            <plat-button class="register-button2" plat-tap="toggleModal()">REGISTER</plat-button>
+        </div>
+    </div>
+    <div class="col-phn-12">
+        <div class="yeti2">
+            <img src="images/apple-watch-and-yeti-image.png">
+        </div>
+    </div>
+</div>
+<!--MOBILE MODAL-->
+<plat-modal plat-options="{ transition: 'fade'}" plat-bind="modal" class="phone">
+    <div class="prompt-title2">Please enter your<br>registration information:</div>
+    <div class="prompt-body2">
+        <input id="first2" placeholder="First and Last Name"></input>
+        <br>
+        <input id="email2" placeholder="Email"></input>
+        <br>
+        <input id="zip2" placeholder="Zip Code"></input>
+        <br>
+        <input id="team2" placeholder="Favorite Team"></input>
+        <p>Enter the above text fields and click<br>register to enter the Free Yeti Cooler<br>or Apple Watch Promotion. This<br>promotion
+            runs through April 17th. You<br>will recieve a comfirmation email after<br>your registration has been processed.</p>
+        <plat-button class="register-button4" plat-tap="toggleModal()">REGISTER</plat-button>
+    </div>
+</plat-modal>
+
+<!--FULL SCREEN MODAL-->
+<plat-modal plat-options="{ transition: 'fade'}" plat-bind="modalMobile" class="modal-prompt full-modal">
+    <div class="prompt-title">Please enter your registration information:</div>
+    <!--<input type="button" value="X" onclick="windowClose();">-->
+    <div class="prompt-body">
+        <input id="first" placeholder="First and Last Name"></input>
+        <br>
+        <input id="email" placeholder="Email"></input>
+        <br>
+        <input id="zip" placeholder="Zip Code"></input>
+        <input id="team" placeholder="Favorite Team"></input>
+        <p>Enter the above text fields and click register to enter the Free Yeti Cooler or Apple Watch Promotion. This promotion
+            runs through April 17th. You will recieve a comfirmation email after your registration has been processed.</p>
+        <plat-button class="register-button3" plat-tap="toggleModalMobile()">REGISTER</plat-button>
+    </div>
+</plat-modal>
