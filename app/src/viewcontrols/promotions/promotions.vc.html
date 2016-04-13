@@ -45,7 +45,9 @@
 </div>
 <!--MOBILE MODAL-->
 <plat-modal plat-options="{ transition: 'fade'}" plat-bind="modal" class="phone">
-    <div class="prompt-title2">Please enter your<br>registration information:</div>
+    <div class="prompt-title2">Please enter your<br>registration information:
+    <button id="exit" plat-tap="toggleModal();">&times;</button>
+    </div>
     <div class="prompt-body2">
         <input id="first2" placeholder="First and Last Name"></input>
         <br>
@@ -62,8 +64,9 @@
 
 <!--FULL SCREEN MODAL-->
 <plat-modal plat-options="{ transition: 'fade'}" plat-bind="modalMobile" class="modal-prompt full-modal">
-    <div class="prompt-title">Please enter your registration information:</div>
-    <!--<input type="button" value="X" onclick="windowClose();">-->
+    <div class="prompt-title">Please enter your registration information:
+    <button id="exit" plat-tap="toggleModalMobile();">&times;</button>
+    </div>
     <div class="prompt-body">
         <input id="first" placeholder="First and Last Name"></input>
         <br>

@@ -95,7 +95,7 @@
 
         .wrapper-view2 {
             background-color: @bground_LgtGray;
-            padding: 0px 70px 20px 70px;
+            margin: auto;
             text-align: center;
         }
 
@@ -126,16 +126,6 @@
             text-align: left;
         }
 
-        .iphone {
-            float: left;
-            margin: 5px 15px 10px 0px;
-        }
-
-        .video-row {
-            text-align: center;
-            margin: auto;
-        }
-
         .videoSubheadinput {
             text-align: left;
             margin-bottom: 0.5em;
@@ -160,6 +150,7 @@
         .videoSubhead h3 {
             font-family: "RobotoCondensed";
             color: @text_gray;
+            padding: 0rem 2rem 0rem 2rem;
         }
 
         .videoSubhead h5 {
@@ -241,7 +232,7 @@
 
         .BaseText { //both pages
             border: 0px;
-            padding: 0.5em;
+            padding: 0.5rem;
             margin-bottom: 15px;
         }
 
@@ -256,12 +247,20 @@
             margin-bottom: 15px;
         }
 
+        .videoRow {
+            text-align: center;
+            // margin: auto;
+            padding: 0rem 2rem 0rem 2rem;
+        }
+        
         .videobox {
             background-color: #fff;
             box-shadow: 0px 2px 0px #c4c5c4; /* horiz, vert, spread, color */
             width: 319px;
-            margin-right: 20px;
-            margin-bottom: 20px;
+            margin: 0 auto;
+            min-height: 21em;
+            // margin-right: 20px;
+            // margin-bottom: 20px;
         }
 
         .videoTxtReg hr {
@@ -292,11 +291,39 @@
 
         //     -------------------------------------
         //     -------------------------------------
-        //     media break points below ------------
+        //     media break points Above a size -----
+        //     -------------------------------------
+        //     -------------------------------------
+        @media screen and (min-width:1050px) {
+            
+            .video-container {
+                &:nth-of-type(1n) {
+                    .videobox {
+                        margin: 0;
+                    }
+                }
+                
+                &:nth-of-type(2n) {
+                    .videobox {
+                        margin: 0 auto;
+                    }
+                }
+                
+                &:nth-of-type(3n) {
+                    .videobox {
+                        margin: 0;
+                        float: right;
+                    }
+                }
+            }
+        }
+        //     -------------------------------------
+        //     -------------------------------------
+        //     media break points Above a size -----
         //     -------------------------------------
         //     -------------------------------------
 
-        @media screen and (max-width:700px) {
+        @media screen and (max-width:1000px) {
                 
             .wrapper-view1 {
                 background-color: @bground_LgtGray;
@@ -315,8 +342,8 @@
             }
             
             .videobox {
-                margin-left: auto !important;
-                margin-right: auto !important;
+                margin-left: auto;
+                margin-right: auto;
                 float: none;
             }
             
@@ -361,14 +388,14 @@
                 text-align: center;
             }
             
-            .video-row {
+            .videoRow {
                 text-align: center;
                 margin: auto;
             }
 
-            .PhnBlckPhn { /* make invisible on small */
+            .PhnBlckPhn {
             text-align: center;
-            background-color: #fff;
+            background-color: #fff !important;
             padding: 0px 20px 0px 20px;
             display: block;
             }
