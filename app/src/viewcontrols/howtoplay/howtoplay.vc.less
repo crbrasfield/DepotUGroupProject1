@@ -8,6 +8,38 @@
     }
 }
 
+h1 {
+    font-size: 3.8em;
+}
+
+h2 {
+    font-size: 3.4em;
+}
+
+h3 {
+    font-size: 3.0em;
+}
+
+h4 {
+    font-size: 2.6em;
+}
+
+h5 {
+    font-size: 2.2em;
+}
+
+h6 {
+    font-size: 1.8em; //might not be used.
+}
+
+p {
+    font-size: 1.2em;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    text-align: left;
+}
+
 .heroArea {
     background-image: url(../../images/how-to-play-hero.jpg);
     background-repeat: no-repeat;
@@ -32,7 +64,7 @@
 
 .pagenavActive {
     text-align: center;
-    width: 50%;
+    width: 50vw;
     height:  40px;
     font-family: "WorkSansRegular";
     font-size: 1.2em;
@@ -46,13 +78,13 @@
 
 .pagenavInactive {
     text-align: center;
-    width: 50%;
+    width: 50vw;
     height:  40px;
     font-family: "WorkSansRegular";
     font-size: 1.2em;
     line-height: 2em;
     color: @text_gray;
-    background-color: @bground_gray;
+    background-color: #fff;
     border-bottom: 3px solid @text_gray;
     cursor: pointer;
     display: inline-block;
@@ -70,23 +102,21 @@
 }
 
 .lowerwrapper {
-    padding: 0px 150px 0px 150px;
+    padding: 0px 90px 0px 90px;
 }
 
-.moveleft { /* make invisible on small */
+.moveleft {
     text-align: left;
 }
 
 .PhnBlckPhn {
     display: none;
-    text-align: center;
-    background-color: #fff;
 }
 
 .PhnBlckTab {
     text-align: center;
     background-color: #fff;
-    padding: 0px 150px 0px 150px;
+    padding: 0px 90px 0px 90px;
 }
 
 .notForPhone {
@@ -120,74 +150,34 @@
 
 .videoSubhead h1 {
     font-family: "WorkSansExtraBold";
-    font-size: 2.4em;
     color: @common_teal;
     text-align: center;
 }
 
 .videoSubhead h2 {
     font-family: "WorkSansExtraBold";
-    font-size: 3.2em;
     color: #000;
-    text-align: left;
 }
 
 .videoSubhead h3 {
     font-family: "RobotoCondensed";
-    font-size: 2.0em;
     color: @text_gray;
-    text-align: left;
-}
-
-.videoSubhead h4 {
-    font-family: "RobotoCondensed";
-    font-size: 1.8em;
-    color: @text_gray;
-    text-align: left;
 }
 
 .videoSubhead h5 {
     font-family: "WorkSansExtraBold";
-    font-size: 2.6em;
     color: @text_gray;
-    text-align: left;
-}
-
-.videoTxtHdr {
-    font-family: "RobotoCondensed";
-    font-size: 1.6em;
-    line-height: 2.0em;
-    color: #000;
-    text-align: left;
-    padding-left: 10px;
-}
-
-.videoTxtReg {
-    font-family: "WorkSansRegular";
-    font-size: 1em;
-    color: @text_gray;
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-.videoTxtReg hr {
-    border: .5 solid #c4c4c4;
-    text-align: center;
 }
 
 .videoTxtCallOut h1 {
     font-family: "WorkSansExtraBold";
-    font-size: 2.4em;
     color: @coversharkMedBlue;
-    text-align: left;
     margin-left: 70px;
 }
 
-.videoTxtCallOut h4 {
+.videoTxtCallOut h6 {
     font-family: "WorkSansExtraBold";
-    font-size: 1.8em;
     color: @text_gray;
-    text-align: left;
     margin-left: 70px;
 }
 
@@ -196,7 +186,6 @@
     width: 18em;
     font-family: "WorkSansRegular";
     font-size: 1.2em;
-    // text-align: left;
     border-style: solid;
     border-width: 1px;
     border-color: @text_gray;
@@ -209,33 +198,31 @@
     position: relative;
     height: 40px;
     width: 180px;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin: 10px, 0px, 10px, 0px;
     background-color: @button_gray;
-    // text-align: center;
     border-radius: 5px;
     font-family: 'RobotoCondensed';
     font-size: 0.9em;
     color: white;
-    line-height: 1.4em;
+    line-height: 1em;
     letter-spacing: .2em;
 }
 
 .marqueeSubhead {
     font-family: "WorkSansExtraBold";
     color: @coversharkMedBlue;
-    font-size: 1.2em;
+    font-size: 1.9em;
 }
 
 .marqueeText {
     font-family: "RobotoBoldCondensed";
     color: @text_gray;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
-.videoSubheadCircle {
+.videoSubheadCircle { //circle only
     font-family: "WorkSansExtraBold";
-    font-size: 1.6em;
+    font-size: 1.8em;
     color: #fff;
     line-height: 1.8em;
     background-color: @coversharkMedBlue;
@@ -246,13 +233,42 @@
     padding: 0px;
 }
 
+.videoTxtHdr { //header by circle
+    font-family: "RobotoCondensed";
+    font-size: 2.2em;
+    line-height: 1.3em;
+    color: #000;
+    padding-left: 10px;
+}
+
+.BaseText { //both pages
+    border: 0px;
+    padding: 0.5em;
+    margin-bottom: 15px;
+}
+
+.BaseText h6 {
+    font-family: "WorkSansExtraBold";
+    color: @coversharkMedBlue;
+}
+
+.BaseText p { //both pages
+    font-family: "WorkSansRegular";
+    color: @text_gray;
+    margin-bottom: 15px;
+}
+
 .videobox {
     background-color: #fff;
     box-shadow: 0px 2px 0px #c4c5c4; /* horiz, vert, spread, color */
     width: 319px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.videoTxtReg hr {
+    border: .5 solid #c4c4c4;
+    text-align: center;
 }
 
 .videobox-img {
@@ -260,28 +276,6 @@
     border: 0px;
     padding: 0px;
     margin: 0px;
-}
-
-.videobox-text {
-    border: 0px;
-    padding: 0.5em;
-}
-
-.videobox-text p {
-    font-size: 1.0em;
-    color: @text_gray;
-}
-
-.videobox-text h2 {
-    font-family: "WorkSansExtraBold";
-    font-size: 2.2em;
-    color: #000;
-}
-
-.videobox-text h4 {
-    font-family: "WorkSansExtraBold";
-    font-size: 1.8em;
-    color: @coversharkMedBlue;
 }
 
 .videobox-button {
@@ -333,13 +327,11 @@
         float: none;
     }
     
-    .videoSubhead {
-        h2, h3, h4, h5 {
-            text-align: center;
-            margin: auto;
-        }
+    h2, h3, h4, h5 {
+        text-align: center;
+        margin: auto;
     }
-
+    
     .video-emial-input {
         height: 2.0em;
         width: 15em;    
@@ -378,6 +370,8 @@
 
     .PhnBlckPhn { /* make invisible on small */
     text-align: center;
+    background-color: #fff;
+    padding: 0px 20px 0px 20px;
     display: block;
     }
     
