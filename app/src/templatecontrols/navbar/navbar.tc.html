@@ -11,14 +11,14 @@
             <plat-link plat-options="{ view: home }"><img id="sharkLogo" src="images/logo-color.svg"></plat-link>
             <plat-link plat-options="{ view: home }"><img id="sharkLogoNotext" src="images/coversharks-mark-color.svg"></plat-link>
             <div class="top-nav-logo-continer">
-                <img id="twitLogo" src="images/twitter-grey.svg">
+                <img plat-tap="getURL()" id="twitLogo" src="images/twitter-grey.svg">
                 <img id="fbLogo" src="images/fb-grey.svg">
             </div>
         </div>
         <ul>
-            <plat-link plat-options="{ view: howtoplay }"><li>HOW TO PLAY</li></plat-link>
-                <plat-link plat-options="{ view: about }"><li>ABOUT</li></plat-link>
-                    <plat-link plat-options="{ view: promotions }"><li>PROMOTIONS</li></plat-link>
+            <plat-link plat-options="{ view: howtoplay }" plat-tap="setHowToPlay()"><li id="howtoplay">HOW TO PLAY</li></plat-link>
+                <plat-link plat-options="{ view: about }" plat-tap="setAbout()"><li id="about">ABOUT</li></plat-link>
+                    <plat-link plat-options="{ view: promotions }" plat-tap="setPromotions()"><li id="promotions">PROMOTIONS</li></plat-link>
         </ul>
     </div>
 </nav>
