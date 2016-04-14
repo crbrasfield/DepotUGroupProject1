@@ -112,12 +112,22 @@
     background-image: url(../../images/bkgrnd.svg);
     background-size: cover;
     background-position: center bottom;
-    height: 40em;
+    height: auto;
     width: 100%;
-    img {
-        height: 40em;
-        width: auto;
+    padding-bottom: 2em;
+    
+    .image-wrap {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
     }
+        img {
+            padding-top: 2em;
+            max-height: 40em;
+            min-height: 30em;
+            width: auto;
+        }
+    
     .how-to-text-wrap {
         color: white;
         text-align: center;
@@ -157,6 +167,13 @@
         height: 10em;
         width: 16em;
         margin-top: 2em;
+    }
+    #first {
+        height: 10em;
+        width: 16em;
+        margin-top: 2em;
+        border-radius: 0;
+        margin-bottom: 0;
     }
     h2 {
        color: #2798ca;
@@ -200,6 +217,24 @@
         border-radius: 0.5em;
         letter-spacing: 2px;
         margin: auto;
+    }
+}
+
+.subscribe-wrap {
+    height: auto;
+    width: 100%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-left: 2em;
+    padding-right: 2em;
+    
+    input {
+        font-family: "RobotoCondensed";
+        width: 60%;
+        height: 2.7em;
+        text-align: center;
+        border-radius: 0.5em;
+        margin-bottom: 2em;
     }
 }
 
@@ -274,14 +309,14 @@
 }
 .promo-hero-second-wrap {
     background-color:white;
-    height: 35em;
+    height: auto;
     color:#545557;
     text-align: center;
         img {
-            height: 250px;
+            height: 20em;
             width: auto;
-            margin-top: 40px;
             margin-right: 4em;
+            margin-bottom: -1em;
         }
         .yeti-text-wrap {
             margin-top: 6em;
@@ -312,12 +347,13 @@
 }
 
 .promo-hero-third-wrap {
-    background-image: url(../../images/bkgrnd.svg);
+    background-color: @coversharkDrkPurple;
     background-size: cover;
     background-position: center bottom;
-    height: 23em;
+    height: auto;
     width: 100%;
-    padding-top: 2.5em;
+    padding-top: 2em;
+    padding-bottom: 2.5em;
     img {
         display: none;
     }
@@ -358,21 +394,38 @@
     text-align: center;
     background-color: #feffff;
     padding-bottom: 2em;
+    
     img {
-        height: 10em;
-        width: 16em;
+        height: auto;
+        width: 100%;
         margin-top: 2em;
+    }
+    
+    #first {
+        height: auto;
+        width: 100%;
+        margin-top: 0;
+        border-radius: 0;
+    }
+    
+    .card-text-wrap {
+        margin-bottom: 1em;
     }
     h2 {
         display: none;
+    }
+    h4 {
+        font-size: 2em;
     }
     p {
         margin: auto;
         text-align: center;
         font-family: "WorkSansRegular";
         width: 80vw;
+        font-size: 1em;
         
     }
+    
     .card {
         display: inline-block;
         background-color:#feffff;
@@ -381,26 +434,7 @@
 
     }
     
-    .mobile-bottom-wrap {
-        height: 100%;
-        margin-top: 20px;
-    }
 
-
-    
-    h3 {
-        margin-top: 2em;
-        color: #2798ca;
-        font-family: "RobotoBoldCondensed"; 
-    }
-    input {
-        font-family: "RobotoCondensed";
-        width: 60vw;
-        height: 2.7em;
-        text-align: center;
-        border-radius: 0.5em;
-        margin-bottom: 2em;
-    }
     .sub-button {
         font-family: "RobotoCondensed";
         color: white;
@@ -415,7 +449,28 @@
     }
 }
 
-
+    .subscribe-wrap {
+        background-color: @bground_gray;
+        height: auto;
+        width: 100%;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        padding-left: 2em;
+        padding-right: 2em;
+        
+    h3 {
+        color: #2798ca;
+        font-family: "RobotoBoldCondensed"; 
+    }
+    input {
+        font-family: "RobotoCondensed";
+        width: 60%;
+        height: 2.7em;
+        text-align: center;
+        border-radius: 0.5em;
+        margin-bottom: 2em;
+    }
+    }
 
 
 

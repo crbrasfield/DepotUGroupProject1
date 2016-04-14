@@ -27,7 +27,7 @@
         }
 
         h6 {
-            font-size: 1.8em; //might not be used.
+            font-size: 1.8em;
         }
 
         p {
@@ -43,21 +43,29 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
-            height: 300px;
-            height: 250px;
-        }
-
-        .heroArea p {
-            color: #fff;
-            font-family: "WorkSansExtraLight";
-            font-size: 3.0em;
-            text-align: center;
-            line-height: 3.8em;
+            display: table;
+            width: 100%;
+            height: 20em;
+            margin: 0px;
+            padding: 0px;
+            p {
+                color: #fff;
+                margin: 0px;
+                padding: 0px;
+                font-family: "WorkSansExtraLight";
+                font-size: 3.0em;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+                letter-spacing: 4px;
+                // line-height: 3.8em;
+            }
         }
 
         .pagenavalign {
             text-align: center;
             margin: auto;
+            margin-top: 1.5em;
         }
 
         .pagenavActive {
@@ -95,7 +103,7 @@
 
         .wrapper-view2 {
             background-color: @bground_LgtGray;
-            padding: 0px 70px 20px 70px;
+            margin: auto;
             text-align: center;
         }
 
@@ -109,6 +117,7 @@
 
         .PhnBlckPhn {
             display: none;
+            background-color: #fff;
         }
 
         .PhnBlckTab {
@@ -126,16 +135,6 @@
             text-align: left;
         }
 
-        .iphone {
-            float: left;
-            margin: 5px 15px 10px 0px;
-        }
-
-        .video-row {
-            text-align: center;
-            margin: auto;
-        }
-
         .videoSubheadinput {
             text-align: left;
             margin-bottom: 0.5em;
@@ -143,28 +142,28 @@
 
         .videoSubhead {
             text-align: center;
-            margin-bottom: 0.5em;
-        }
-
-        .videoSubhead h1 {
-            font-family: "WorkSansExtraBold";
-            color: @common_teal;
-            text-align: center;
-        }
-
-        .videoSubhead h2 {
-            font-family: "WorkSansExtraBold";
-            color: #000;
-        }
-
-        .videoSubhead h3 {
-            font-family: "RobotoCondensed";
-            color: @text_gray;
-        }
-
-        .videoSubhead h5 {
-            font-family: "WorkSansExtraBold";
-            color: @text_gray;
+            margin-bottom: 0.5rem;
+            background-color: #fff;
+            h1 {
+                font-family: "WorkSansExtraBold";
+                color: @common_teal;
+                text-align: center;
+                background-color: @bground_gray;
+            }
+            h2 {
+                font-family: "WorkSansExtraBold";
+                color: #000;
+            }
+            h3 {
+                font-family: "RobotoCondensed";
+                color: @text_gray;
+                background-color: @bground_gray;
+                padding: 0rem 2rem 0rem 2rem;
+            }
+            h5 {
+                font-family: "WorkSansExtraBold";
+                color: @text_gray;
+            }
         }
 
         .videoTxtCallOut h1 {
@@ -241,27 +240,38 @@
 
         .BaseText { //both pages
             border: 0px;
-            padding: 0.5em;
+            padding: 0.5rem;
             margin-bottom: 15px;
+            p {
+                font-family: "WorkSansRegular";
+                color: @text_gray;
+                margin-bottom: 15px;
+            }
+            h6 {
+                font-family: "WorkSansExtraBold";
+                color: @coversharkMedBlue;
+            }
         }
 
-        .BaseText h6 {
-            font-family: "WorkSansExtraBold";
-            color: @coversharkMedBlue;
+        .videoRow {
+            text-align: center;
+            // margin: auto;
+            padding: 0rem 2rem 0rem 2rem;
         }
-
-        .BaseText p { //both pages
-            font-family: "WorkSansRegular";
-            color: @text_gray;
-            margin-bottom: 15px;
-        }
-
+        
         .videobox {
             background-color: #fff;
             box-shadow: 0px 2px 0px #c4c5c4; /* horiz, vert, spread, color */
-            width: 319px;
-            margin-right: 20px;
-            margin-bottom: 20px;
+            max-width: 319px;
+            width: 100%;
+            margin: 0 auto;
+            min-height: 21em;
+            // margin-right: 20px;
+            // margin-bottom: 20px;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
         }
 
         .videoTxtReg hr {
@@ -269,12 +279,12 @@
             text-align: center;
         }
 
-        .videobox-img {
-            width: 100%;
-            border: 0px;
-            padding: 0px;
-            margin: 0px;
-        }
+        // .videobox-img {
+        //     width: 300px;
+        //     border: 0px;
+        //     padding: 0px;
+        //     margin: 0px;
+        // }
 
         .videobox-button {
             height: 25px;
@@ -292,7 +302,35 @@
 
         //     -------------------------------------
         //     -------------------------------------
-        //     media break points below ------------
+        //     media break points Above a size -----
+        //     -------------------------------------
+        //     -------------------------------------
+        @media screen and (min-width:900px) {
+            
+            .video-container {
+                &:nth-of-type(1n) {
+                    .videobox {
+                        margin: 0;
+                    }
+                }
+                
+                &:nth-of-type(2n) {
+                    .videobox {
+                        margin: 0 auto;
+                    }
+                }
+                
+                &:nth-of-type(3n) {
+                    .videobox {
+                        margin: 0;
+                        float: right;
+                    }
+                }
+            }
+        }
+        //     -------------------------------------
+        //     -------------------------------------
+        //     media break points Above a size -----
         //     -------------------------------------
         //     -------------------------------------
 
@@ -315,8 +353,8 @@
             }
             
             .videobox {
-                margin-left: auto !important;
-                margin-right: auto !important;
+                margin-left: auto;
+                margin-right: auto;
                 float: none;
             }
             
@@ -361,23 +399,32 @@
                 text-align: center;
             }
             
-            .video-row {
+            .videoRow {
                 text-align: center;
                 margin: auto;
             }
 
-            .PhnBlckPhn { /* make invisible on small */
-            text-align: center;
-            background-color: #fff;
-            padding: 0px 20px 0px 20px;
-            display: block;
+            .PhnBlckPhn {
+                text-align: center;
+                background-color: #fff;
+                display: block;
+                
+                h2 {
+                    font-family: "WorkSansExtraBold";
+                    color: #000;
+                }
+                h5 {
+                    font-family: "WorkSansExtraBold";
+                    color: @text_gray;
+                    padding: 10px;
+                }
             }
             
-            .PhnBlckTab { /* make invisible on small */
+            .PhnBlckTab {
                 display: none;
             }
             
-            .moveleftTabVis { /* make invisible on small */
+            .moveleftTabVis {
                 display: none;
             }
         }

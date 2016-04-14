@@ -4,18 +4,80 @@ import HowToPlayViewControl from '../../viewcontrols/howtoplay/howtoplay.vc';
 import PromotionsViewControl from '../../viewcontrols/promotions/promotions.vc';
 import AboutViewControl from '../../viewcontrols/about/about.vc';
 
+
+  document.addEventListener("DOMContentLoaded", function() {
+      let nav = NavbarTemplateControl;
+      console.log(nav);
+  });
+
 export default class NavbarTemplateControl extends ui.TemplateControl {
     templateString: string = require('./navbar.tc.html');
     hasOwnContext = true;
+    
+
     
     context: any = {
         modal: false,
         home: HomeViewControl,
         howtoplay: HowToPlayViewControl,
         promotions: PromotionsViewControl,
-        about: AboutViewControl
+        about: AboutViewControl,
+        random: 'hello this is random text'
     };
     
+    getURL() {
+        let url = document.URL;
+        let urlShort = url.substr(url.lastIndexOf("/"))
+        let abc = urlShort.slice(1);
+        console.log(abc);
+        if (abc === 'about'){
+            this.setAbout();
+        }
+        if (abc === 'promotions'){
+            this.setPromotions();
+        }
+        if (abc === 'howtoplay'){
+            this.setHowToPlay();
+        }
+    }
+    
+    setTemplate() {
+        this.getURL();
+    }
+    
+    
+    
+    setAbout() {
+        let about = document.getElementById('about');
+        let promotions = document.getElementById('promotions');
+        let howtoplay = document.getElementById('howtoplay');
+        about.classList.add("active");
+        promotions.classList.remove("active");
+        howtoplay.classList.remove("active");
+    }
+    
+    setPromotions() {
+        let about = document.getElementById('about');
+        let promotions = document.getElementById('promotions');
+        let howtoplay = document.getElementById('howtoplay');
+        about.classList.remove("active");
+        howtoplay.classList.remove("active");
+        promotions.classList.add("active");
+    }
+    
+    setHowToPlay() {
+        let about = document.getElementById('about');
+        let promotions = document.getElementById('promotions');
+        let howtoplay = document.getElementById('howtoplay');
+        about.classList.remove("active");
+        promotions.classList.remove("active");
+        howtoplay.classList.add("active");
+
+    }
+    
+
+    
+
     
     toggleModal() {
         if (this.context.modal === false) {
@@ -24,8 +86,7 @@ export default class NavbarTemplateControl extends ui.TemplateControl {
         } else {
             this.context.modal = false;
             body.className = '';
-        }
-        
+        }  
     }
     
 }
@@ -34,3 +95,4 @@ let body: any = document.getElementById("body")
 
 
 register.control('navbar', NavbarTemplateControl);
+
