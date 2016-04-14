@@ -39,6 +39,9 @@ export default class NavbarTemplateControl extends ui.TemplateControl {
         if (abc === 'howtoplay'){
             this.setHowToPlay();
         }
+        if (abc === '') {
+            this.clearAll();
+        }
     }
     
     setTemplate() {
@@ -46,7 +49,14 @@ export default class NavbarTemplateControl extends ui.TemplateControl {
     }
     
     
-    
+    clearAll() {
+        let about = document.getElementById('about');
+        let promotions = document.getElementById('promotions');
+        let howtoplay = document.getElementById('howtoplay');
+        about.classList.remove("active");
+        promotions.classList.remove("active");
+        howtoplay.classList.remove("active");
+    }
     setAbout() {
         let about = document.getElementById('about');
         let promotions = document.getElementById('promotions');
