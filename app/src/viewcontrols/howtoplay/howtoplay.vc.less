@@ -27,7 +27,7 @@
         }
 
         h6 {
-            font-size: 1.8em; //might not be used.
+            font-size: 1.8em;
         }
 
         p {
@@ -45,14 +45,13 @@
             background-position: center center;
             height: 300px;
             height: 250px;
-        }
-
-        .heroArea p {
-            color: #fff;
-            font-family: "WorkSansExtraLight";
-            font-size: 3.0em;
-            text-align: center;
-            line-height: 3.8em;
+            p {
+                color: #fff;
+                font-family: "WorkSansExtraLight";
+                font-size: 3.0em;
+                text-align: center;
+                line-height: 3.8em;
+            }
         }
 
         .pagenavalign {
@@ -136,30 +135,26 @@
             text-align: center;
             margin-bottom: 0.5rem;
             background-color: #fff;
-        }
-
-        .videoSubhead h1 {
-            font-family: "WorkSansExtraBold";
-            color: @common_teal;
-            text-align: center;
-            background-color: @bground_gray;
-        }
-
-        .videoSubhead h2 {
-            font-family: "WorkSansExtraBold";
-            color: #000;
-        }
-
-        .videoSubhead h3 {
-            font-family: "RobotoCondensed";
-            color: @text_gray;
-            background-color: @bground_gray;
-            padding: 0rem 2rem 0rem 2rem;
-        }
-
-        .videoSubhead h5 {
-            font-family: "WorkSansExtraBold";
-            color: @text_gray;
+            h1 {
+                font-family: "WorkSansExtraBold";
+                color: @common_teal;
+                text-align: center;
+                background-color: @bground_gray;
+            }
+            h2 {
+                font-family: "WorkSansExtraBold";
+                color: #000;
+            }
+            h3 {
+                font-family: "RobotoCondensed";
+                color: @text_gray;
+                background-color: @bground_gray;
+                padding: 0rem 2rem 0rem 2rem;
+            }
+            h5 {
+                font-family: "WorkSansExtraBold";
+                color: @text_gray;
+            }
         }
 
         .videoTxtCallOut h1 {
@@ -238,17 +233,15 @@
             border: 0px;
             padding: 0.5rem;
             margin-bottom: 15px;
-        }
-
-        .BaseText h6 {
-            font-family: "WorkSansExtraBold";
-            color: @coversharkMedBlue;
-        }
-
-        .BaseText p { //both pages
-            font-family: "WorkSansRegular";
-            color: @text_gray;
-            margin-bottom: 15px;
+            p {
+                font-family: "WorkSansRegular";
+                color: @text_gray;
+                margin-bottom: 15px;
+            }
+            h6 {
+                font-family: "WorkSansExtraBold";
+                color: @coversharkMedBlue;
+            }
         }
 
         .videoRow {
@@ -351,12 +344,6 @@
                 float: none;
             }
             
-            // .videoSubhead h5 {
-            //     font-family: "WorkSansExtraBold";
-            //     color: @text_gray;
-            //     padding: 0px, 10px, 0px, 10px;
-            // }
-            
             .videoSubheadCircle {
                 margin: auto;
                 float: none;
@@ -407,24 +394,23 @@
                 text-align: center;
                 background-color: #fff;
                 display: block;
+                
+                h2 {
+                    font-family: "WorkSansExtraBold";
+                    color: #000;
                 }
-            
-            .PhnBlckPhn h2 {
-                font-family: "WorkSansExtraBold";
-                color: #000;
+                h5 {
+                    font-family: "WorkSansExtraBold";
+                    color: @text_gray;
+                    padding: 10px;
+                }
             }
             
-            .PhnBlckPhn h5 {
-                font-family: "WorkSansExtraBold";
-                color: @text_gray;
-                padding: 10px;
-            }
-            
-            .PhnBlckTab { /* make invisible on small */
+            .PhnBlckTab {
                 display: none;
             }
             
-            .moveleftTabVis { /* make invisible on small */
+            .moveleftTabVis {
                 display: none;
             }
         }
