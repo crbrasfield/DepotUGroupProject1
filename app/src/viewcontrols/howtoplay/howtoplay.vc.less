@@ -253,11 +253,16 @@
         .videobox {
             background-color: #fff;
             box-shadow: 0px 2px 0px #c4c5c4; /* horiz, vert, spread, color */
-            width: 319px;
+            max-width: 319px;
+            width: 100%;
             margin: 0 auto;
             min-height: 21em;
             // margin-right: 20px;
             // margin-bottom: 20px;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
         }
 
         .videoTxtReg hr {
@@ -265,12 +270,12 @@
             text-align: center;
         }
 
-        .videobox-img {
-            width: 100%;
-            border: 0px;
-            padding: 0px;
-            margin: 0px;
-        }
+        // .videobox-img {
+        //     width: 300px;
+        //     border: 0px;
+        //     padding: 0px;
+        //     margin: 0px;
+        // }
 
         .videobox-button {
             height: 25px;
@@ -291,7 +296,7 @@
         //     media break points Above a size -----
         //     -------------------------------------
         //     -------------------------------------
-        @media screen and (min-width:700px) {
+        @media screen and (min-width:900px) {
             
             .video-container {
                 &:nth-of-type(1n) {
